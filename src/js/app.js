@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       "move": {
         "enable": true,
-        "speed": 4,
+        "speed": 1,
         "direction": "none",
         "random": true,
         "straight": false,
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "attract": {
           "enable": false,
           "rotateX": 600,
-          "rotateY": 1200
+          "rotateY": 600
         }
       },
       nb: 80

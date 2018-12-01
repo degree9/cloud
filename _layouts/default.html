@@ -2,11 +2,38 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
+  <style>
+  body {
+    margin: 0;
+  }
+  .iframe {
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 50vw;
+    height: 50vh;
+    float: left;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .opensource {
+    background-color: white;
+  }
+  .enterprise {
+    background-color: black;
+  }
+  .cloud {
+    background-color: white;
+    width: 100vw;
+  }
+  </style>
   <body>
-      {% include header.html %}
-      <section id="projects">
-        {% include projects.html %}
-      </section>
-        {{ content }}
-      {% include footer.html %}
+    <iframe src="https://oss.degree9.io/" class="iframe opensource"></iframe>
+    <iframe src="https://enterprise.degree9.io/" class="iframe enterprise"></iframe>
+    <iframe src="https://cloud.degree9.io/" class="iframe cloud"></iframe>
+    <!-- <iframe src="http://fm4.orf.at/" class="iframe iframe--4"></iframe>-->
   </body>

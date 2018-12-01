@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#000000"
       },
       "shape": {
-        "type": "polygon",
+        "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#ffffff"
+          "color": "#000000"
         },
         "polygon": {
           "nb_sides": 5
@@ -51,15 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
+        "enable": false
       },
       "move": {
         "enable": true,
-        "speed": 4,
+        "speed": 1,
         "direction": "none",
         "random": true,
         "straight": false,
@@ -68,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "attract": {
           "enable": false,
           "rotateX": 600,
-          "rotateY": 1200
+          "rotateY": 600
         }
       },
       nb: 80
